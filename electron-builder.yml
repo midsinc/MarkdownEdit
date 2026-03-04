@@ -1,0 +1,46 @@
+appId: com.markdownedit.app
+productName: MarkdownEdit
+copyright: "Copyright 2026"
+
+directories:
+  buildResources: build
+  output: dist
+
+files:
+  - src/**/*
+  - renderer/**/*
+  - node_modules/**/*
+  - package.json
+
+fileAssociations:
+  - ext: md
+    name: Markdown Document
+    description: "Markdown text file"
+    role: Editor
+  - ext: markdown
+    name: Markdown Document
+    description: "Markdown text file"
+    role: Editor
+
+win:
+  target:
+    - target: nsis
+      arch: [x64]
+  icon: build/icon.ico
+
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  perMachine: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: MarkdownEdit
+  include: build/installer.nsh
+
+mac:
+  target:
+    - target: dmg
+      arch: [x64, arm64]
+  category: public.app-category.productivity
+  icon: build/icon.icns
+  darkModeSupport: true
