@@ -1,0 +1,17 @@
+:root {
+  --bg-primary: #1e1e2e;
+  --bg-toolbar: #181825;
+  --bg-preview: #1e1e2e;
+  --bg-statusbar: #181825;
+  --bg-button: transparent;
+  --bg-button-hover: #313244;
+  --bg-button-active: #45475a;
+  --bg-code-inline: #313244;
+  --bg-code-block: #181825;
+  --bg-blockquote: #181825;
+  --bg-table-header: #313244;
+  --text-primary: #cdd6f4;
+  --text-secondary: #a6adc8;
+  --border-color: #313244;
+  --accent-color: #89b4fa;
+}

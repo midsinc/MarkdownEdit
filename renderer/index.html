@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; img-src 'self' data:;">
+  <title>MarkdownEdit</title>
+  <link rel="stylesheet" href="styles/app.css">
+  <link rel="stylesheet" href="styles/light.css" id="theme-light">
+  <link rel="stylesheet" href="styles/dark.css" id="theme-dark" disabled>
+</head>
+<body>
+  <!-- Toolbar -->
+  <div id="toolbar">
+    <div class="toolbar-group">
+      <button id="btn-bold" title="Bold (Ctrl+B)"><strong>B</strong></button>
+      <button id="btn-italic" title="Italic (Ctrl+I)"><em>I</em></button>
+      <button id="btn-h1" title="Heading 1">H1</button>
+      <button id="btn-h2" title="Heading 2">H2</button>
+      <button id="btn-h3" title="Heading 3">H3</button>
+      <button id="btn-link" title="Insert Link">Link</button>
+      <button id="btn-image" title="Insert Image">Img</button>
+      <button id="btn-code" title="Code Block">Code</button>
+      <button id="btn-ul" title="Unordered List">List</button>
+      <button id="btn-ol" title="Ordered List">1.</button>
+      <button id="btn-quote" title="Blockquote">&ldquo;</button>
+      <button id="btn-hr" title="Horizontal Rule">&#8212;</button>
+    </div>
+    <div class="toolbar-right">
+      <button id="btn-theme" title="Toggle theme">Theme</button>
+    </div>
+  </div>
+
+  <!-- Main content area -->
+  <div id="main">
+    <div id="editor-pane">
+      <div id="editor-container"></div>
+    </div>
+    <div id="divider"></div>
+    <div id="preview-pane">
+      <div id="preview-content"></div>
+    </div>
+  </div>
+
+  <!-- Status bar -->
+  <div id="statusbar">
+    <span id="status-words">Words: 0</span>
+    <span id="status-chars">Characters: 0</span>
+    <span id="status-lines">Lines: 0</span>
+    <span id="status-cursor">Ln 1, Col 1</span>
+    <span id="status-file" class="status-right">Untitled</span>
+  </div>
+
+  <script src="bundle.js"></script>
+</body>
+</html>
