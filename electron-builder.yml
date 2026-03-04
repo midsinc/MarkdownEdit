@@ -31,6 +31,8 @@ win:
   icon: build/icon.ico
   signAndEditExecutable: false
 
+afterPack: ./scripts/after-pack.js
+
 nsis:
   oneClick: false
   allowToChangeInstallationDirectory: true
