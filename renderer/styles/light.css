@@ -14,4 +14,8 @@
   --text-secondary: #666666;
   --border-color: #e0e0e0;
   --accent-color: #0366d6;
+  --bg-tabbar: #f0f0f0;
+  --bg-tab: #e8e8e8;
+  --bg-tab-active: #ffffff;
+  --bg-tab-hover: #f0f0f0;
 }

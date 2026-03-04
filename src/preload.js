@@ -39,6 +39,16 @@ contextBridge.exposeInMainWorld('electronAPI', {
     ipcRenderer.on('menu:export-pdf', handler)
     return () => ipcRenderer.removeListener('menu:export-pdf', handler)
   },
+  onMenuNewTab: (callback) => {
+    const handler = () => callback()
+    ipcRenderer.on('menu:new-tab', handler)
+    return () => ipcRenderer.removeListener('menu:new-tab', handler)
+  },
+  onMenuCloseTab: (callback) => {
+    const handler = () => callback()
+    ipcRenderer.on('menu:close-tab', handler)
+    return () => ipcRenderer.removeListener('menu:close-tab', handler)
+  },
 
   platform: process.platform
 })

@@ -70,6 +70,11 @@ function buildMenu() {
       label: 'File',
       submenu: [
         {
+          label: 'New Tab',
+          accelerator: 'CmdOrCtrl+N',
+          click: () => mainWindow.webContents.send('menu:new-tab')
+        },
+        {
           label: 'Open...',
           accelerator: 'CmdOrCtrl+O',
           click: async () => {
@@ -95,6 +100,11 @@ function buildMenu() {
         {
           label: 'Rename...',
           click: () => mainWindow.webContents.send('menu:rename')
+        },
+        {
+          label: 'Close Tab',
+          accelerator: 'CmdOrCtrl+W',
+          click: () => mainWindow.webContents.send('menu:close-tab')
         },
         { type: 'separator' },
         {
