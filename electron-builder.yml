@@ -17,10 +17,12 @@ fileAssociations:
     name: Markdown Document
     description: "Markdown text file"
     role: Editor
+    icon: build/md-file-icon.ico
   - ext: markdown
     name: Markdown Document
     description: "Markdown text file"
     role: Editor
+    icon: build/md-file-icon.ico
 
 win:
   target:
